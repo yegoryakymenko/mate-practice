@@ -13,7 +13,7 @@
   --color_8: #887575;
 }
 
-body div:first-child {
+body div:first-child p:nth-child(n + 2) {
   background-color: var(--color_1);
 }
  p + h2 {
@@ -22,7 +22,7 @@ body div:first-child {
  span ~ h2 {
  	background-color: var(--color_3);
  }
- div + h2 {
+ div ~ h2 {
  	background-color: var(--color_4);
  }
 	</style>
