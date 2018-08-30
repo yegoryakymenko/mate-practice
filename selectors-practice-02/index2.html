@@ -13,7 +13,7 @@
   --color_7: #085F63;
   --color_8: #887575;
 }
-	a[href="about"] {
+	a[href*="about"] {
 		background-color: var(--color_6);
 	}
 	a[href$=".html"] {
@@ -22,14 +22,14 @@
 	p:not([class]) {
 		background-color: var(--color_3);
 	}
-	p[data-href] {
+	*[data-href] {
 		background-color: var(--color_4);
 	}
-	a:first-child {
-		background-color: var(--color_5)
+	* a:first-child {
+		background-color: var(--color_5);
 	}
-	p[data-href*="highlight_me"] {
-		text-decoration: none;;
+	*[data-href~="highlight_me"] {
+		text-decoration: underline;
 	}
 </style>
 <body>
