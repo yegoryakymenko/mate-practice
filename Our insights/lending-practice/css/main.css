@@ -6,6 +6,12 @@ html {
 }
 header {
 	display: block;
+	width: 100%;
+	height: 60px;
+	background-color: #fe470f;
+}
+.header-wrapper {
+	display: block;
 	max-width: 900px;
 	margin: 0 auto;
 	font-size: 0px;
@@ -19,6 +25,12 @@ header {
 	line-height: 30px;
 	height: 60px;
 } 
+.header-block img {
+	transition: transform 3s linear;
+}
+.header-block img:hover {
+	transform: rotate(1turn);
+}
 a.hover-button {
 	display: none;
 	width: 100px;
@@ -26,16 +38,19 @@ a.hover-button {
 	vertical-align: middle;
 	padding-top: 23px;
 }
-.header-block:first-child a, .header-block:first-child img{
+.header-block p, .header-block:first-child img{
 	vertical-align: middle;
 }
 .header-block:first-child {
 	text-align: center;
 } 
 
-.header-block:first-child a {
+.header-block p {
+	display: inline-block;
 	color: #000;
 	padding-left: 12px;
+	text-decoration: underline;
+	margin: 0;
 }
 .header-block:nth-child(2) {
 	text-align: center;
@@ -124,6 +139,10 @@ h1 {
 	background-color: #fe470f;
 	padding: 13px 52px;
 	border: none;
+	cursor: pointer;
+}
+.details-block button:hover {
+	box-shadow: 0 0 15px #999;
 }
 article {
 	display: block;
@@ -148,6 +167,12 @@ article {
 	padding-right: 40px;
 }
 footer {
+	display: block;
+	width: 100%;
+	height: 60px;
+	background-color: #fe470f;
+}
+.footer-wrapper {
 	display: block;
 	max-width: 900px;
 	margin: 0 auto;
