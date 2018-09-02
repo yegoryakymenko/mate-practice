@@ -26,7 +26,7 @@ header {
 	height: 60px;
 } 
 .header-block img {
-	transition: transform 3s linear;
+	transition: transform 1.5s linear;
 }
 .header-block img:hover {
 	transform: rotate(1turn);
