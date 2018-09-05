@@ -1,0 +1,158 @@
+* {
+	box-sizing: border-box;
+}
+.block-1 {
+	
+	font-size: 0;
+}
+.block-2{
+
+	font-size: 0;
+}
+.block-3 {
+
+	font-size: 0;
+}
+.block-4 {
+
+	font-size: 0;
+}
+.block-5 {
+	font-size: 0;
+}
+.block-1 div {
+	background: yellow;
+	font-size: 16px;
+	display: inline-block;
+}
+.block-2 div {
+	background: orange;
+	font-size: 16px;
+	display: inline-block;
+}
+.block-3 div {
+	background: red;
+	font-size: 16px;
+	display: inline-block;
+}
+.block-4 div {
+	background: violet;
+	font-size: 16px;
+	display: inline-block;
+}
+.block-5 div {
+	background: green;
+	font-size: 16px;
+	display: inline-block;
+	margin:  auto;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	.block-1 div {
+		width: 50%;
+	}
+	.block-2 div {
+		width: 50%;
+	}
+	.block-3 div {
+		width: 100%;
+	}
+	.block-4 div {
+		width: 100%;
+	}
+	.block-5 div {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 960px)  {
+	.block-1 div {
+		width: 50%;
+	}
+	.block-2 div {
+		width: 50%;
+	}
+	.block-3 div {
+		width: 100%;
+	}
+	.block-4 div {
+		width: 50%
+	}
+	.block-4 div:last-of-type {
+		width: 100%;
+	}
+	.block-5 div {
+		width: 50%;
+	}
+	.block-5 div:last-of-type {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 961px) and (max-width: 1200px) {
+	.block-1 div {
+		width: 50%;
+	}
+	.block-2 div {
+		width: 50%;
+	}
+	.block-3 div {
+		width: 33.33%;
+	}
+	.block-4 div {
+		width: 35%;
+	}
+	.block-4 div:nth-child(2) {
+		width: 30%;
+	}
+	.block-5 div{
+		width: 50%;
+	}
+	.block-5  div:last-of-type {
+		width: 100%;
+	}
+}
+@media screen and  (min-width: 1201px) and (max-width: 1800px){
+	.block-1 div {
+		width: 50%;
+	}
+	.block-2 div {
+		width: 50%;
+	}
+	.block-3 div {
+		width: 50%;
+	}
+	.block-3 div:last-of-type {
+		width: 100%;
+	}
+	.block-4 div {
+		width: 35%;
+	}
+	.block-4 div:nth-child(2) {
+		width: 30%;
+	}
+	.block-5 div {
+		width: 33.33%;
+	}
+	.block-5 div:nth-child(4) {
+		margin-left: 17%;
+	}
+
+}
+@media screen and (min-width: 1801px) {
+	.block-1 div {
+		width: 25%;
+	}
+	.block-2 div {
+		width: 50%;
+	}
+	.block-3 div {
+		width: 25%;
+	}
+	.block-4 div {
+		width: 25%;
+	}
+	.block-4 div:last-of-type {
+		width: 50%;
+	}
+	.block-5 div {
+		width: 20%;
+	}
+}
