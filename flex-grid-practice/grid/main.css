@@ -3,8 +3,8 @@
 }
 .wrapper {
 	display: grid;
-	width: 1000px;
-	grid-template-columns: 100px calc(65% - 100px) calc(35% - 100px);
+	min-width: 500px;
+	grid-template-columns: 100px calc(65% - 65px) calc(35% - 35px);
 	grid-template-rows: 100px 300px 150px;
 }
 .wrapper div {
