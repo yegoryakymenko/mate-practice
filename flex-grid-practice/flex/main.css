@@ -12,7 +12,7 @@
 }
 .wrapper {
 	display: flex;
-	width: 1000px;
+	min-width: 500px;
 	flex-wrap: wrap;
 }
 .wrapper div {
@@ -31,14 +31,14 @@
 }
 .list {
 	height: 300px;
-	width: calc(65% - 100px);
+	width: calc(65% - 65px);
 }
 .navbar {
 	height: 450px;
-	width: calc(45% - 100px);
+	width: calc(35% - 35px);
 }
 .footer {
 	height: 150px;
-	width: 65%;
+	width: calc(65% + 35px);
 	transform: translateY(-150px); 
 }
