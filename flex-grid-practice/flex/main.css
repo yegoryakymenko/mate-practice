@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+.logo, .list {
+	background: orange;
+}
+.menu, .footer {
+	background: red;
+}
+.news, .navbar {
+	background: firebrick;
+}
+.wrapper {
+	display: flex;
+	width: 1000px;
+	flex-wrap: wrap;
+}
+.wrapper div {
+	border: 1px solid #000;
+}
+.logo {
+	width: 100px;
+	height: 100px;
+}
+.menu {
+	width: calc(100% - 100px);
+}
+.news {
+	width: 100px;
+	height: 300px;
+}
+.list {
+	height: 300px;
+	width: calc(65% - 100px);
+}
+.navbar {
+	height: 450px;
+	width: calc(45% - 100px);
+}
+.footer {
+	height: 150px;
+	width: 65%;
+	transform: translateY(-150px); 
+}
