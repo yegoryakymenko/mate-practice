@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+button {
+	background: #DCDCDC;
+	font-size: 16px;
+	color: #808080;
+	outline: none;
+	border: 1px solid #C0C0C0;
+}
+button i {
+	padding: 10px;
+	margin-right: 5px;
+}
+.lorem {
+	display: none;
+	padding: 10px;
+	border: 1px solid #C0C0C0;
+	background: #fff;
+	border-top: none;
+	position: absolute;
+}
+button:focus {
+	border-top: 2px solid #008080;
+}
+.wordpress:focus ~ .lorem1 {
+	display: block;
+}
+
+.windows:focus ~ .lorem2 {
+	display: block;
+}
+.html:focus ~ .lorem3 {
+	display: block;
+}
+.css:focus ~ .lorem4 {
+	display: block;
+}

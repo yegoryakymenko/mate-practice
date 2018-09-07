@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+	display: block;
+	margin: 0 auto;
+	background: #fff;
+	width: 290px;
+}
+.modal {
+	display: block;
+	width: 100%;
+	height: 100px;
+	background: #C0C0C0	;
+	text-transform: capitalize;	
+}
+.header {
+	position: relative;
+	padding: 15px;
+}
+.header p {
+	display: inline-block;
+}
+.header i {
+	color: red;
+	position: absolute;
+	right: 10%;
+	top: 30%;
+}
+.footer {
+	padding: 15px;
+	font-size: 12px;
+}
+.main {
+	padding: 10px;
+	height: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.main input{
+	padding-bottom: 4px;
+	margin-bottom: 35px;
+	display: block;
+	width: 260px;
+	border: none;
+	border-bottom: 1px solid #d3d3d3;
+	font-size: 14px;
+	outline: none;
+}
+.main button {
+	margin-top: 15px;
+	padding: 10px 15px;
+	border: none;
+	background: #0000CD;
+	color: #fff;
+	border-radius: 5px;
+	outline: none
+}
+.main p {
+	color: #808080;
+	font-size: 14px;
+}
+
+.main::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.main::-webkit-scrollbar-thumb {
+  background: rgba(105, 105, 105,.9); 
+  border-radius: 5px;
+}
