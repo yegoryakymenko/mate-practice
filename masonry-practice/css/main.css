@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+.masonry {
+	display: flex;
+  	flex-flow: row wrap;
+ 	width: 100%;
+}
+.masonry-block {
+  flex: auto;
+  height: 250px;
+  width: 250px;
+  margin: 0 8px 8px 0;
+}
+.masonry-block:nth-child(4n+1){
+     width: 250px;
+     background: url(../img/1440975606.jpg);
+  }
+.masonry-block:nth-child(4n+2) {
+	height: 350px;
+	width: 325px;
+	background: url(../img/1441188207.jpg);
+}
+.masonry-block:nth-child(4n+3) {
+	height: 300px;
+	width: 180px;
+	background: url(../img/1449580642.jpg) center;
+}
+.masonry-block:nth-child(4n+4) {
+	width: 380px;
+	background: url(../img/1449574206.jpg) center;
+}
