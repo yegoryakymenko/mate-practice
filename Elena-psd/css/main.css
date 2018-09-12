@@ -113,6 +113,9 @@ header {
 	outline: none;
 	transition: .5s ease-out;
 }
+.target-wrap button:hover {
+	background: #d2d5da;
+}
 .target {
 	width: 100%;
 	background: rgba(234,234,235,.6);
@@ -254,6 +257,10 @@ header {
 	outline: none;
 	transition: .5s ease-out;
 }
+.life-ring-wrap button:hover,.red-carpet-wrap button:hover {
+	background: #50c3af;
+}
+
 .target:nth-child(3) {
 	background-color: #fff;
 	text-align: left;
