@@ -100,7 +100,7 @@ header {
 	display: block;
 	margin: 0 auto;
 	margin-top: 40px;
-	padding: 18px 45px 19px 50px;
+	padding: 15px 70px;
 	background-color: #50c3af;
 	border: none;
 	border-radius: 25px; 
@@ -453,7 +453,9 @@ footer {
 }
 button:hover {
 	box-shadow: 0 0 15px rgba(0,0,0,.8);
-
+}
+.header-wrap button:hover {
+	background: #d2d5da;
 }
 button a:hover {
 	color:#000;
