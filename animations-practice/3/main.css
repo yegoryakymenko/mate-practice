@@ -1,0 +1,40 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.circle {
+	position: relative;
+	
+	left: 30%;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 5px solid black;
+}
+.static-arrow {
+	position: relative;
+	left: 50%;
+	width: 5px;
+	height: 250px;
+	background: #000;
+}
+.moving-arrow {
+	position: relative;
+	left: 50%;
+	bottom: 51%;
+	width: 5px;
+	height: 250px;
+	background: #000;
+	transform-origin: left bottom;
+	animation: move 60s linear infinite;
+
+}
+@keyframes move {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

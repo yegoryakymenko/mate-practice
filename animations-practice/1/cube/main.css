@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+.cube {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	height: 150px;
+	background: blue;
+	animation: myOrbit 4s linear infinite;
+}
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}

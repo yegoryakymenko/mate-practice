@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 0px;
+}
+.box {
+	position: relative; 
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	background: blue;
+	font-size: 16px;
+	margin: 20% 10px 10px 0;
+}
+.ball {
+	display: block;
+	position: absolute;
+	left: 25px;
+	z-index: -10;
+	width: 100px;
+	height: 100px;
+	transition: transform 2s 2s linear;
+	background: pink;
+}
+.box:hover .ball {
+	transform: translateY(-120px);
+}
+.line {
+	display: inline-block;
+	position: absolute;
+	width: 50%;
+	height: 3px;
+	background: black;
+}
+.left {
+	transform-origin: right bottom;
+	transition: transform 2s linear;
+	right:0;
+}
+.right {
+	transform-origin: left top;
+	transition: transform 2s linear; 
+}
+.box:hover .left {
+	transform: rotate(90deg);
+}
+.box:hover .right {
+	transform: rotate(-90deg)
+}

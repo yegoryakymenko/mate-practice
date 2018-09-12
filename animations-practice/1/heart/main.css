@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+.heart {
+	position: absolute;
+	top: 5%;
+	left: 30%;
+	font-size: 20rem;
+	color: pink;
+	animation: heartbeat 1.5s infinite;
+}
+@keyframes heartbeat {
+	0% {
+		font-size: 20rem;
+	}
+	80% {
+		font-size: 30rem;
+	}
+	90% {
+		font-size: 20rem;
+	}
+	95% {
+		font-size: 25rem;
+	}
+	100% {
+		font-size: 20rem;
+	}
+}

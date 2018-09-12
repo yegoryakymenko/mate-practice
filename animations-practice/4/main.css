@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
+.modal {
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	width: 600px;
+	height: 300px;
+	opacity: 0;
+	border: 3px solid black;
+	border-radius: 15px;	
+	animation: visible 5s ease-out;
+	animation-delay: 4s;
+
+}
+@keyframes visible {
+	0%,99% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
