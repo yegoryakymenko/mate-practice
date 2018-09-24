@@ -1,0 +1,57 @@
+.wrapper {
+	display: inline-block;
+	width: 10%;
+	position: relative
+}
+.progress {
+	transform: rotate(-90deg);
+}
+
+.progress__value {
+	stroke-dasharray: 339.292;
+	stroke-dashoffset: 339.292;
+	animation: progress 2s infinite alternate;
+}
+.progress__value2 {
+	stroke-dasharray: 339.292;
+	stroke-dashoffset: 339.292;
+	animation: progress_2 2s infinite alternate;
+}
+.progress__value3 {
+	stroke-dasharray: 339.292;
+	stroke-dashoffset: 339.292;
+	animation: progress_3 2s infinite alternate;
+}
+
+@keyframes progress {
+	from {
+		stroke-dashoffset: 339.292;
+	}
+	to {
+		stroke-dashoffset: 240;
+	}
+}
+
+@keyframes progress_2 {
+	from {
+		stroke-dashoffset: 339.292;
+	}
+	to {
+		stroke-dashoffset: 140;
+	}
+}
+
+@keyframes progress_3 {
+	from {
+		stroke-dashoffset: 339.292;
+	}
+	to {
+		stroke-dashoffset: 40;
+	}
+}
+.number, .number2, .number3 {
+	position: absolute;
+	font-size: 30px;
+	top: 43px;
+	left: 37px;
+}
