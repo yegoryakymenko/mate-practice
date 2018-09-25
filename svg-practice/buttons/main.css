@@ -4,80 +4,50 @@
   padding: 0;
 }
 
-html,
-css {
+html {
   width: 100%;
   height: 100%;
 }
-
-.position {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 15%;
-}
-
-#workarea {
-  position: absolute;
+.container {
   width: 100%;
   height: 100%;
-  background-color: #1e1a3e;
-  font-family: Raleway;
 }
-
-#personal {
-  color:white;
-  text-decoration:none;
-  position:absolute;
-  bottom:15px;
-  right:2%;
-}
-
-
-.spot {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
- 
 .svg-wrapper {
-  margin-top: 0;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+.svg-wrapper:last-of-type {
+  top: 35%;
+}
+svg {
   position: relative;
-  width: 150px;
-  /*make sure to use same height/width as in the html*/
-  height: 40px;
-  display: inline-block;
-  border-radius: 3px;
-  margin-left: 5px;
-  margin-right: 5px
 }
-
-#shape {
-  stroke-width: 6px;
-  fill: transparent;
-  stroke: #009FFD;
-  stroke-dasharray: 85 400;
-  stroke-dashoffset: -220;
-  transition: 1s all ease;
+.inner {
+  position: absolute;
+  transform: translateX(150px);
+  width: 0px;
+  height: 150px;
+  transition: 1s ease-out;
+  opacity: 0;
 }
-
-#text {
-  margin-top: -35px;
-  text-align: center;
+@keyframes bg{
+  100% {
+    transform: translateX(0px);
+  width: 300px;
+  opacity: 1;
+  }
 }
-
-#text a {
-  color: white;
-  text-decoration: none;
-  font-weight: 100;
-  font-size: 1.1em;
+svg:hover .inner {
+  animation: bg 1s linear;
+  animation-fill-mode: both;
 }
-
-.svg-wrapper:hover #shape {
-  stroke-dasharray: 50 0;
-  stroke-width: 3px;
-  stroke-dashoffset: 0;
-  stroke: #06D6A0;
+text {
+  transition: 1s;
+}
+svg:hover  text {
+  fill: white;
 }
