@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100%;
+  width: 100%; }
+
+.wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .wrapper-block__main {
+    display: block;
+    width: 251px;
+    height: 241px;
+    position: relative;
+    top: 20px;
+    left: 30%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35), inset 0 1px 0 #dfdcdc; }
+  .wrapper-block__layer {
+    display: block;
+    position: absolute;
+    bottom: -9%;
+    left: 30%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35); }
+  .wrapper .first {
+    width: 247px;
+    height: 3px;
+    transform: translate(3px, 1px); }
+  .wrapper .second {
+    width: 244px;
+    height: 3px;
+    transform: translate(4px, 3px); }
+  .wrapper .third {
+    width: 243px;
+    height: 3px;
+    transform: translate(5px, 5px); }
