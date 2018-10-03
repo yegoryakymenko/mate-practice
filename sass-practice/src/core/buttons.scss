@@ -1,0 +1,33 @@
+$sizes: (
+	small: 30px,
+	medium: 50px,
+	big: 80px
+);
+$bgs: (
+	success: rgb(0, 153, 51),
+	warning: rgb(255, 153, 51),
+	info: rgb(0, 153, 255),
+	default: rgb(255, 51, 204),
+	error: rgb(255, 80, 80)
+);
+@each $class, $color in $bgs {
+	.#{$class} {
+		background: $color;
+	}
+}
+@for $i from 1 through 5{
+  @if ($i == 3 ) {
+    .buttons button:nth-child(#{$i}){
+      height: map-get($sizes, small);
+    }
+  }@else if ($i % 2 == 0){
+    .buttons button:nth-child(#{$i}){
+     height: map-get($sizes, medium);
+    }
+  }@else{
+    .buttons button:nth-child(#{$i}){
+     height: map-get($sizes, big);
+    }
+  }
+
+}

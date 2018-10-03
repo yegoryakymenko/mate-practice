@@ -19,11 +19,117 @@ button:hover {
 	background: green;
 	color: white;
 }
+button:focus {
+	background: red;
+	color: black;
+}
 .tasks__list {
 	list-style-type: none;
 	
 	.tasks__item {
-	color: red;
+	background: rgb(204,255,255);
+	text-align: center;
+	border-radius: 5px;
+	padding: 10px 10px;
 	}
 }
 @import 'part';
+@import 'mixin.scss';
+@import 'maps.scss';
+.toastr {
+	display: block;
+	height: 600px;
+	width: 250px;
+	margin: 0 auto;
+		&-block {
+		display: block;
+		width: 100%;	
+		border-radius: 5px;
+		color: white;
+		margin-top: 5px;
+		box-shadow: 0 0 5px rgba(0,0,0,.4);
+		i {
+			float: left;
+			font-size: 2.5em;
+			width: 30%;
+			padding: 10px 0 0 10px;
+		}
+		.wrapper {
+			float: left;
+			width: 65%;
+			text-align: left;
+			
+			p,h4 {
+				margin: 0;
+				
+			}
+			h4 {
+				margin-top: 10px;
+			}
+		}
+		
+	}
+		.success {
+		background: map-get($bgs, success);
+		height: map-get($most, most-height);
+		padding: map-get($most, most-padding);
+		}
+		.information {
+		background: map-get($bgs, information);
+		height: map-get($most, less-height);
+		padding: map-get($most, less-padding);
+		}
+		.alert {
+		background: map-get($bgs, alert);
+		height: map-get($most, most-height);
+		padding: map-get($most, most-padding);
+		}
+		.oops {
+		background: map-get($bgs, oops);
+		height: map-get($most, most-height);
+		padding: map-get($most, most-padding);
+		}
+		.message {
+			color: #000;
+			padding: 10px;
+			p {
+				margin: 0;
+			}
+		}
+		.message p:first-of-type {
+			font-weight: bold;
+		}
+		.message p:last-of-type {
+			color: red;
+		}
+}
+
+
+.ladder {
+	display: inline-block;
+	font-size: 0px;
+	width: 302px;
+	height: 300px;
+	border-left: 2px solid rgb(204, 153, 255);
+	border-bottom: 2px solid rgb(204, 153, 255);
+}
+@import 'ledder.scss';
+table {
+	td{
+	width: 20px;
+  	height: 20px;
+  	border: 1px solid black;
+	}
+}
+@import 'tablefor.scss';
+@import 'buttons.scss';
+.buttons {
+	display: block;
+	width: 400px;
+	height: 100px;
+	margin: 0 auto;
+	button {
+		width: 70px;
+		display: inline-block;
+	}
+}
