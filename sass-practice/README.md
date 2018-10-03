@@ -1,2 +1,2 @@
 
-https://yegoryakymenko.github.io/mate-practice/email-practice
+https://yegoryakymenko.github.io/mate-practice/sass-practice/dist
