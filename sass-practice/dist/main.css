@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box; }
+
+button {
+  display: block;
+  height: 40px;
+  margin: 0 auto;
+  background: blue;
+  outline: none; }
+
+button:hover {
+  background: green;
+  color: white; }
+
+.tasks__list {
+  list-style-type: none; }
+  .tasks__list .tasks__item {
+    color: red; }
+
+.list_2 .tasks__list {
+  font-size: 0; }
+  .list_2 .tasks__list .tasks__item {
+    display: inline-block;
+    width: 33%;
+    font-size: 16px;
+    color: green; }

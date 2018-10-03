@@ -1,0 +1,29 @@
+$backColor: #ffcccc;
+$buttonBackColor: #2a602d;
+$buttonBackActiveColor: #334432;
+$mainSize: 14px;
+$fontFamily: "Helvetice", sans-serif;
+$textColor: #333;
+$countBlocks: 5;
+* {
+	box-sizing: border-box;
+}
+button {
+	display:block;
+	height: 40px;
+	margin: 0 auto;
+	background: blue;
+	outline: none;
+}
+button:hover {
+	background: green;
+	color: white;
+}
+.tasks__list {
+	list-style-type: none;
+	
+	.tasks__item {
+	color: red;
+	}
+}
+@import 'part';
