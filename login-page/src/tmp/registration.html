@@ -1,0 +1,68 @@
+<h2>Registration</h2>
+<div class="registration-block"><p>first name</p>
+{% include "src/tmp/input.html" %}</div>
+
+<div class="registration-block">
+	<p>last name</p>
+	{% include "src/tmp/input.html" %}
+</div>
+<div class="registration-block">
+	<p>password</p>
+	{% include "src/tmp/input.html" %}
+</div>
+<div class="registration-block">
+	<p>confirm password</p>
+	{% include "src/tmp/input.html" %}
+</div>
+<div class="registration-block">
+	<p class="birth">date of birth</p>
+	<input type="text" placeholder="MM" class="input date">
+	<input type="text" placeholder="DD" class="input date">
+	<input type="text" placeholder="YYYY" class="input date">
+<p>gender</p>
+<select name="" id="">
+	<option value="">Male</option>
+	<option value="">Female</option>
+</select>
+</div>
+<div class="registration-block">
+	<p>mobiel/cell no.</p>
+	{% include "src/tmp/input.html" %}
+</div>
+<div class="registration-block">
+	<p>e-mail</p>
+	{% include "src/tmp/input.html" %}
+</div>
+<div class="registration-block">
+	<p>confirm e-mail</p>
+	{% include "src/tmp/input.html" %}
+</div>
+<div class="registration-block">
+	<p>address</p>
+	<textarea name="address" id="" cols="30" rows="5"></textarea>
+</div>
+<div class="city">
+	<div class="city-block">
+		<p>city</p>
+		{% include "src/tmp/input.html" %}
+	</div>
+	<div class="city-block">
+		<p>state</p>
+	{% include "src/tmp/input.html" %}
+	</div>
+	<div class="city-block">
+		<p>zip/postal code</p>
+		{% include "src/tmp/input.html" %}
+		
+	</div>
+	<div class="city-block">
+		<p>country</p>
+	{% include "src/tmp/input.html" %}
+	</div>
+	<div class="city-block">
+			<input type="checkbox">
+			<p class="agree">Agreed to terms and Conditions</p>
+			<button>Sign Up</button>
+	</div>
+
+</div>

@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial; }
+
+body {
+  background: #fec107;
+  padding: 10px; }
+
+p {
+  color: #656565;
+  text-transform: capitalize; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  background: #fff; }
+  .wrapper .wrapper-container {
+    display: flex;
+    justify-content: space-around; }
+  .wrapper .container:last-of-type {
+    width: 40%; }
+  .wrapper .container {
+    width: 30%; }
+    .wrapper .container h2 {
+      text-transform: capitalize; }
+    .wrapper .container .input {
+      background: #fafafa;
+      border-radius: 3px;
+      border: 1px solid #d3d3d3;
+      padding: 5px; }
+    .wrapper .container .login-fields {
+      position: relative; }
+      .wrapper .container .login-fields .input {
+        display: block;
+        width: 100%; }
+      .wrapper .container .login-fields i {
+        position: absolute;
+        right: 20px;
+        top: 120px;
+        color: #656565; }
+      .wrapper .container .login-fields i:first-of-type {
+        top: 40px; }
+      .wrapper .container .login-fields .login-btn {
+        display: inline-block;
+        color: white;
+        border: none;
+        background: #fec107;
+        margin-top: 30px;
+        padding: 5px 15px;
+        width: 40%;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 3px; }
+      .wrapper .container .login-fields .login-btn + p {
+        display: inline-block;
+        width: 58%;
+        text-align: right;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: right; }
+      .wrapper .container .login-fields .line-text {
+        font-size: 0;
+        width: 100%;
+        margin-top: 30px; }
+        .wrapper .container .login-fields .line-text .line {
+          display: inline-block;
+          height: 2px;
+          width: 33%;
+          background: #d3d3d3;
+          margin-bottom: 5px; }
+        .wrapper .container .login-fields .line-text p {
+          display: inline-block;
+          width: 33%;
+          font-size: 16px;
+          text-align: center;
+          margin: 0;
+          color: #656565;
+          font-weight: 600; }
+      .wrapper .container .login-fields .social {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px; }
+        .wrapper .container .login-fields .social button {
+          border: none;
+          background: #405b92;
+          padding: 5px 20px;
+          cursor: pointer;
+          color: white;
+          border-radius: 3px; }
+        .wrapper .container .login-fields .social button:first-child {
+          background: #32b1d4; }
+        .wrapper .container .login-fields .social button:last-child {
+          background: #cb442e; }
+  .wrapper .registration {
+    display: flex;
+    flex-direction: column; }
+    .wrapper .registration p:after {
+      content: '*'; }
+    .wrapper .registration .registration-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .wrapper .registration .registration-block p {
+        width: 40%; }
+      .wrapper .registration .registration-block .input {
+        width: 100%;
+        height: 30px; }
+      .wrapper .registration .registration-block textarea {
+        width: 100%;
+        background: #fafafa;
+        border-radius: 3px;
+        border: 1px solid #d3d3d3;
+        padding: 5px; }
+      .wrapper .registration .registration-block .date {
+        width: 15%;
+        margin-left: 10px;
+        text-align: center; }
+      .wrapper .registration .registration-block .date + p {
+        text-align: right;
+        margin-right: 10px; }
+      .wrapper .registration .registration-block p.birth {
+        width: 46%; }
+      .wrapper .registration .registration-block select {
+        background: #fafafa;
+        border-radius: 3px;
+        border: 1px solid #d3d3d3;
+        padding: 5px;
+        color: #656565; }
+    .wrapper .registration .city {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-self: flex-end;
+      width: 72%; }
+      .wrapper .registration .city-block {
+        width: 40%; }
+        .wrapper .registration .city-block .input {
+          width: 100%; }
+      .wrapper .registration .city-block:nth-child(3), .wrapper .registration .city-block:nth-child(4) {
+        width: 100%; }
+      .wrapper .registration .city-block:last-child {
+        margin-top: 10px;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around; }
+        .wrapper .registration .city-block:last-child p {
+          width: 90%;
+          text-align: center;
+          font-size: 10px;
+          font-weight: bold;
+          color: #000; }
+        .wrapper .registration .city-block:last-child p:after {
+          content: ''; }
+        .wrapper .registration .city-block:last-child button {
+          display: block;
+          margin-top: 5px;
+          width: 100%;
+          color: #fff;
+          background: #74d840;
+          padding: 5px 10px;
+          border: none;
+          border-radius: 3px;
+          font-weight: bold;
+          cursor: pointer; }
+  .wrapper .cookie {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 500px;
+    padding: 20px 10px;
+    border: 1px solid #d3d3d3;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); }
+    .wrapper .cookie p {
+      color: #000; }
+    .wrapper .cookie a {
+      text-decoration: none; }

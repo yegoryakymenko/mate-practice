@@ -1,0 +1,226 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial;
+}
+body {
+	background: #fec107;
+	padding: 10px;
+}
+p {
+	color: #656565;
+	text-transform: capitalize;
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	box-shadow: -15px 15px 30px rgba(0,0,0,.5);
+	padding: 50px;
+	background: #fff;
+	.wrapper-container	{
+
+		display: flex;
+		justify-content: space-around;
+	}
+		.container:last-of-type {
+			width: 40%;
+		}
+		.container {
+			width: 30%;
+			h2 {
+				text-transform: capitalize;
+			}
+			.input {
+				background: #fafafa;
+				border-radius: 3px;
+				border: 1px solid #d3d3d3;
+				padding: 5px;
+			}
+			.login-fields {
+				position: relative;
+				.input {
+					display: block;
+					width: 100%;
+				}
+				i {
+				position: absolute;
+				right: 20px;
+				top: 120px;
+				color: #656565;
+				}
+				i:first-of-type {
+					top: 40px;
+				}
+				.login-btn {
+					display: inline-block;
+					color: white;
+					border: none;
+					background: #fec107;
+					margin-top: 30px;
+					padding: 5px 15px;
+					width: 40%;
+					font-weight: bold;
+					cursor: pointer;
+					border-radius: 3px;
+				}
+				.login-btn + p {
+					display: inline-block;
+					width: 58%;
+					text-align: right;
+					font-weight: bold;
+					font-size: 14px;
+					cursor: pointer;
+					text-align: right;
+				}
+				.line-text {
+					font-size: 0;
+					width: 100%;
+					margin-top: 30px;
+					.line {
+						display: inline-block;
+						height: 2px;
+						width: 33%;
+						background: #d3d3d3;
+						margin-bottom: 5px;
+					}
+					p {
+						display: inline-block;
+						width: 33%;
+						font-size: 16px;
+						text-align: center;
+						margin: 0;
+						color: #656565;
+						font-weight: 600;
+					}
+				
+				}
+				.social {
+					display: flex;
+					justify-content: space-between;
+					margin-top: 30px;
+					button {
+						border: none;
+						background: #405b92;
+						padding: 5px 20px;
+						cursor: pointer;
+						color: white;
+						border-radius: 3px;
+					}
+					button:first-child {
+						background: #32b1d4;
+					}
+					button:last-child {
+						background: #cb442e;
+					}
+				}
+			}
+		}
+		.registration {
+			display: flex;
+			flex-direction: column;
+			p:after {
+				content: '*';
+			}
+			.registration-block {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				p {
+					width: 40%;
+				}
+				.input {
+					width: 100%;
+					height: 30px;
+				}
+				textarea {
+					width: 100%;
+					background: #fafafa;
+					border-radius: 3px;
+					border: 1px solid #d3d3d3;
+					padding: 5px;
+				}
+				.date {
+					width: 15%;
+					margin-left: 10px;
+					text-align: center;
+				}
+				.date + p {
+					text-align:right;
+					margin-right: 10px;
+				}
+				p.birth {
+					width: 46%;
+				}
+				select {
+					background: #fafafa;
+					border-radius: 3px;
+					border: 1px solid #d3d3d3;
+					padding: 5px;
+					color: #656565;
+				}
+			}
+		.city {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-self: flex-end;
+			width: 72%;
+			&-block {
+				width: 40%;
+				.input {
+					width: 100%;
+				}
+			}
+			&-block:nth-child(3), &-block:nth-child(4) {
+				width: 100%;
+			}
+			&-block:last-child {
+				margin-top: 10px;
+				width: 50%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-around;
+				p {
+					width: 90%;
+					text-align: center;
+					font-size: 10px;
+					font-weight: bold;
+					color: #000;
+				}
+				p:after {
+					content: '';
+				}
+				button {
+					display: block;
+					margin-top: 5px;
+					width: 100%;
+					color: #fff;
+					background: #74d840;
+					padding: 5px 10px;
+					border: none;
+					border-radius: 3px;
+					font-weight: bold;
+					cursor: pointer;
+				}
+			}
+		}
+		}
+		.cookie {
+			display: block;
+			margin: 0 auto;
+			margin-top: 50px;
+			width: 500px;
+			padding: 20px 10px;
+			border: 1px solid #d3d3d3;
+			font-size: 14px;
+			text-align: center;
+			box-shadow: 0px 5px 10px rgba(0,0,0,.5);
+			p {
+				color: #000;
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+
+}
