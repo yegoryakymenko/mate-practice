@@ -171,7 +171,7 @@ p {
 			flex-wrap: wrap;
 			justify-content: space-between;
 			align-self: flex-end;
-			width: 72%;
+			width: 80%;
 			margin-left: auto;
 			&-block {
 				width: 40%;
@@ -184,17 +184,23 @@ p {
 			}
 			&-block:last-child {
 				margin-top: 10px;
-				width: 50%;
+				min-width: 80%;
 				display: flex;
 				flex-wrap: wrap;
 				align-items: center;
-				justify-content: space-around;
-				p {
-					width: 9vw;
-					text-align: center;
-					font-size: 10px;
+				.agree {
+					display: flex;
+					align-items: center;
+					min-width: 250px;
+
+				}
+				p {	
+					min-width: 151px;
+					font-size: 0.6rem;
 					font-weight: bold;
 					color: #000;
+					text-align: center;
+					padding-left: 10px;
 				}
 				p:after {
 					content: '';
@@ -202,7 +208,7 @@ p {
 				button {
 					display: block;
 					margin-top: 5px;
-					width: 100%;
+					width: 73%;
 					color: #fff;
 					background: #74d840;
 					padding: 5px 10px;
