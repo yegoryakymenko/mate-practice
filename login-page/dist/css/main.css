@@ -114,27 +114,32 @@ p {
         border-radius: 3px;
         border: 1px solid #d3d3d3;
         padding: 5px; }
-      .wrapper .registration .registration-block .date {
-        width: 15%;
-        margin-left: 10px;
-        text-align: center; }
-      .wrapper .registration .registration-block .date + p {
-        text-align: right;
-        margin-right: 10px; }
-      .wrapper .registration .registration-block p.birth {
-        width: 46%; }
-      .wrapper .registration .registration-block select {
-        background: #fafafa;
-        border-radius: 3px;
-        border: 1px solid #d3d3d3;
-        padding: 5px;
-        color: #656565; }
+      .wrapper .registration .registration-block .birth-inputs {
+        width: 100%;
+        display: flex;
+        align-items: center; }
+        .wrapper .registration .registration-block .birth-inputs select {
+          background: #fafafa;
+          border-radius: 3px;
+          border: 1px solid #d3d3d3;
+          padding: 5px;
+          color: #656565; }
+        .wrapper .registration .registration-block .birth-inputs .date {
+          width: 20%;
+          margin-left: 10px;
+          text-align: center; }
+        .wrapper .registration .registration-block .birth-inputs .date:first-child {
+          margin-left: 0; }
+        .wrapper .registration .registration-block .birth-inputs .date + p {
+          text-align: right;
+          margin-right: 10px; }
     .wrapper .registration .city {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-self: flex-end;
-      width: 72%; }
+      width: 72%;
+      margin-left: auto; }
       .wrapper .registration .city-block {
         width: 40%; }
         .wrapper .registration .city-block .input {
@@ -149,7 +154,7 @@ p {
         align-items: center;
         justify-content: space-around; }
         .wrapper .registration .city-block:last-child p {
-          width: 90%;
+          width: 9vw;
           text-align: center;
           font-size: 10px;
           font-weight: bold;

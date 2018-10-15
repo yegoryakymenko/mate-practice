@@ -1,7 +1,7 @@
 <h2>Registration</h2>
+<form action="" class="registration">
 <div class="registration-block"><p>first name</p>
 {% include "src/tmp/input.html" %}</div>
-
 <div class="registration-block">
 	<p>last name</p>
 	{% include "src/tmp/input.html" %}
@@ -16,14 +16,16 @@
 </div>
 <div class="registration-block">
 	<p class="birth">date of birth</p>
-	<input type="text" placeholder="MM" class="input date">
-	<input type="text" placeholder="DD" class="input date">
-	<input type="text" placeholder="YYYY" class="input date">
-<p>gender</p>
-<select name="" id="">
-	<option value="">Male</option>
-	<option value="">Female</option>
-</select>
+	<div class="birth-inputs">
+		<input type="text" placeholder="MM" class="input date">
+		<input type="text" placeholder="DD" class="input date">
+		<input type="text" placeholder="YYYY" class="input date">
+		<p>gender</p>
+		<select name="" id="">
+			<option value="">Male</option>
+			<option value="">Female</option>
+		</select>
+	</div>
 </div>
 <div class="registration-block">
 	<p>mobiel/cell no.</p>
@@ -66,3 +68,4 @@
 	</div>
 
 </div>
+</form>
